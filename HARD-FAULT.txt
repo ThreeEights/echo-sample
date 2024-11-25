@@ -1,0 +1,29 @@
+WLAN MAC Address : 24:CD:8D:3E:1C:05
+WLAN Firmware    : wl0: Jul 18 2021 19:15:39 version 7.45.98.120 (56df937 CY) FWID 01-69db62cf
+WLAN CLM         : API: 12.2 Data: 9.10.39 Compiler: 1.29.4 ClmImport: 1.36.3 Creation: 2021-07-18 19:03:20 
+WHD VERSION      : 2.6.0.18446 : v2.6.0 : GCC 12.2 : 2023-03-17 21:20:01 +0800
+
+[00:00:00.634,000] <dbg> net_conn: net_conn_change_callback: (main): [7] connection handler 0x8005ea4 changed callback
+[00:00:00.644,000] <dbg> net_conn: net_conn_change_remote: (main): [7] connection handler 0x8005ea4 changed remote
+[00:00:00.657,000] <dbg> net_conn: conn_register_debug: (main): [0x8005ea4/17/1/0x1d] remote -/67 
+[00:00:00.669,000] <dbg> net_conn: conn_register_debug: (main):   local 0.0.0.0/68 cb 0x10020d3d ud 0
+*** Booting Zephyr OS build v3.7.0-6534-gdcfbd7d0a7ed ***
+[00:00:00.688,000] <inf> net_config: Initializing network
+[00:00:00.696,000] <inf> net_config: Waiting interface 1 (0x8003bc0) to be up...
+[00:00:30.707,000] <inf> net_config: Running dhcpv4 client...
+[00:00:30.708,000] <err> net_config: Timeout while waiting network interface
+[00:00:30.714,000] <err> net_config: Network initialization failed (-115)
+uart:~$ Function whd_wifi_join failed at line 1769 checkres = 33555438 
+[00:00:40.740,000] <err> infineon_airoc_wifi: Failed to connect with network
+[00:00:40.745,000] <err> os: ***** MPU FAULT *****
+[00:00:40.752,000] <err> os:   Stacking error (context area might be not valid)
+[00:00:40.762,000] <err> os:   Data Access Violation
+[00:00:40.770,000] <err> os:   MMFAR Address: 0x80085f0
+[00:00:40.777,000] <err> os: r0/a1:  0x98371888  r1/a2:  0x1230e8b9  r2/a3:  0x50e16bbb
+[00:00:40.788,000] <err> os: r3/a4:  0x50d71db8 r12/ip:  0x7dcecf94 r14/lr:  0xc9728f3d
+[00:00:40.799,000] <err> os:  xpsr:  0x79a88e00
+[00:00:40.806,000] <err> os: Faulting instruction address (r15/pc): 0x8be5b9f6
+[00:00:40.816,000] <err> os: >>> ZEPHYR FATAL ERROR 2: Stack overflow on CPU 0
+[00:00:40.826,000] <err> os: Current thread: 0x80047c8 (net_mgmt)
+[00:00:40.834,000] <err> os: Halting system
+uart:~$ 
